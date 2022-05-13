@@ -1,0 +1,144 @@
+2022-05-13 02:34:47.093  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.2.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512) ~[mongodb-driver-core-4.2.3.jar:na]
+	... 5 common frames omitted
+
+2022-05-13 02:34:49.465  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:1661}] to localhost:27017
+2022-05-13 02:34:49.466  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2059703085}
+2022-05-13 04:35:01.258  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.2.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512) ~[mongodb-driver-core-4.2.3.jar:na]
+	... 5 common frames omitted
+
+2022-05-13 04:35:04.492  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:1662}] to localhost:27017
+2022-05-13 04:35:04.493  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3183420620}
+2022-05-13 08:35:26.828  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.2.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512) ~[mongodb-driver-core-4.2.3.jar:na]
+	... 5 common frames omitted
+
+2022-05-13 08:35:31.444  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:1663}] to localhost:27017
+2022-05-13 08:35:31.445  INFO 9576 --- [cluster-ClusterId{value='627cb86af71f52051e5c90a1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4442546457}
+2022-05-13 11:02:37.556  INFO 9576 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 11
+2022-05-13 11:02:37.557  INFO 9576 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 11
+2022-05-13 11:02:37.582  INFO 9576 --- [http-nio-8083-exec-3] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:5, serverValue:1655}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+2022-05-13 11:02:37.583  INFO 9576 --- [http-nio-8083-exec-3] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:1654}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+2022-05-13 11:02:37.583  INFO 9576 --- [http-nio-8083-exec-3] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:1653}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+2022-05-13 11:02:37.624  INFO 9576 --- [http-nio-8083-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:1664}] to localhost:27017
+2022-05-13 11:24:21.535  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-09
+2022-05-13 11:24:21.540  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 32
+2022-05-13 11:24:21.541  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 46
+2022-05-13 11:24:21.543  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-10
+2022-05-13 11:24:21.545  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 25
+2022-05-13 11:24:21.545  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 67
+2022-05-13 11:24:21.547  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-11
+2022-05-13 11:24:21.548  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : -3
+2022-05-13 11:24:21.548  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 8
+2022-05-13 11:24:21.549  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-12
+2022-05-13 11:24:21.551  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : -10
+2022-05-13 11:24:21.551  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 45
+2022-05-13 11:24:21.554  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-13
+2022-05-13 11:24:21.556  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-14
+2022-05-13 12:53:55.352  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 12:53:55.353  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 12:54:13.222  INFO 9576 --- [http-nio-8083-exec-2] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 12:54:13.223  INFO 9576 --- [http-nio-8083-exec-2] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 12:54:13.223  INFO 9576 --- [http-nio-8083-exec-2] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 12:54:13.223  INFO 9576 --- [http-nio-8083-exec-2] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 12:54:13.229 TRACE 9576 --- [http-nio-8083-exec-2] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur122022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.updateData(com.example.weatherApp.entity.WeatherEntity)] caches=[weather] | key='#weather.city+#weather.time+#weather.date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless=''
+2022-05-13 12:54:48.841  INFO 9576 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 12:54:48.842  INFO 9576 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 12:54:48.842  INFO 9576 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 12:54:48.842  INFO 9576 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 12:54:48.844 TRACE 9576 --- [http-nio-8083-exec-1] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur122022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.updateData(com.example.weatherApp.entity.WeatherEntity)] caches=[weather] | key='#weather.city+#weather.time+#weather.date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless=''
+2022-05-13 12:54:52.406 TRACE 9576 --- [http-nio-8083-exec-5] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur122022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.getCurrentData(java.lang.String,java.lang.Integer,java.lang.String)] caches=[weather] | key='#city+#time+#date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+2022-05-13 12:54:52.410 TRACE 9576 --- [http-nio-8083-exec-5] o.s.cache.interceptor.CacheInterceptor   : Cache entry for key 'guntur122022-05-13' found in cache 'weather'
+2022-05-13 13:00:56.991  INFO 9576 --- [http-nio-8083-exec-4] c.e.w.service.WeatherServiceImpl         : 13
+2022-05-13 13:00:56.991 TRACE 9576 --- [http-nio-8083-exec-7] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur132022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.getCurrentData(java.lang.String,java.lang.Integer,java.lang.String)] caches=[weather] | key='#city+#time+#date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+2022-05-13 13:00:56.991  INFO 9576 --- [http-nio-8083-exec-4] c.e.w.service.WeatherServiceImpl         : 13
+2022-05-13 13:00:56.991  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-14
+2022-05-13 13:00:56.992 TRACE 9576 --- [http-nio-8083-exec-7] o.s.cache.interceptor.CacheInterceptor   : No cache entry for key 'guntur132022-05-13' in cache(s) [weather]
+2022-05-13 13:00:56.993 TRACE 9576 --- [http-nio-8083-exec-7] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur132022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.getCurrentData(java.lang.String,java.lang.Integer,java.lang.String)] caches=[weather] | key='#city+#time+#date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+2022-05-13 13:00:56.993  INFO 9576 --- [http-nio-8083-exec-7] c.e.w.service.WeatherServiceImpl         : 13
+2022-05-13 13:00:56.996  INFO 9576 --- [http-nio-8083-exec-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:12, serverValue:1666}] to localhost:27017
+2022-05-13 13:00:56.996  INFO 9576 --- [http-nio-8083-exec-6] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:11, serverValue:1665}] to localhost:27017
+2022-05-13 13:00:56.999  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-15
+2022-05-13 13:00:57.000  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-16
+2022-05-13 13:00:57.001  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-17
+2022-05-13 13:00:57.002  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-18
+2022-05-13 13:00:57.004  INFO 9576 --- [http-nio-8083-exec-6] c.e.w.service.WeatherServiceImpl         : 2022-05-19
+2022-05-13 13:01:13.378  INFO 9576 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 13:01:13.378  INFO 9576 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 13:01:19.364  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 13:01:19.364  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 13:01:19.364  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 20
+2022-05-13 13:01:19.364  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 95
+2022-05-13 13:01:19.366 TRACE 9576 --- [http-nio-8083-exec-8] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur132022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.updateData(com.example.weatherApp.entity.WeatherEntity)] caches=[weather] | key='#weather.city+#weather.time+#weather.date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless=''
+2022-05-13 13:01:28.861  INFO 9576 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 13
+2022-05-13 13:01:28.861 TRACE 9576 --- [http-nio-8083-exec-2] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur132022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.getCurrentData(java.lang.String,java.lang.Integer,java.lang.String)] caches=[weather] | key='#city+#time+#date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+2022-05-13 13:01:28.861  INFO 9576 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 13
+2022-05-13 13:01:28.862  INFO 9576 --- [http-nio-8083-exec-5] c.e.w.service.WeatherServiceImpl         : 2022-05-14
+2022-05-13 13:01:28.863  INFO 9576 --- [http-nio-8083-exec-5] c.e.w.service.WeatherServiceImpl         : 2022-05-15
+2022-05-13 13:01:28.864  INFO 9576 --- [http-nio-8083-exec-5] c.e.w.service.WeatherServiceImpl         : 2022-05-16
+2022-05-13 13:01:28.865  INFO 9576 --- [http-nio-8083-exec-5] c.e.w.service.WeatherServiceImpl         : 2022-05-17
+2022-05-13 13:01:28.867  INFO 9576 --- [http-nio-8083-exec-5] c.e.w.service.WeatherServiceImpl         : 2022-05-18
+2022-05-13 13:01:28.868  INFO 9576 --- [http-nio-8083-exec-5] c.e.w.service.WeatherServiceImpl         : 2022-05-19
+2022-05-13 13:01:28.905 TRACE 9576 --- [http-nio-8083-exec-2] o.s.cache.interceptor.CacheInterceptor   : Cache entry for key 'guntur132022-05-13' found in cache 'weather'
+2022-05-13 13:56:47.721  INFO 9576 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 13
+2022-05-13 13:56:47.721  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 2022-05-14
+2022-05-13 13:56:47.721  INFO 9576 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 13
+2022-05-13 13:56:47.721 TRACE 9576 --- [http-nio-8083-exec-9] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur132022-05-13' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.getCurrentData(java.lang.String,java.lang.Integer,java.lang.String)] caches=[weather] | key='#city+#time+#date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+2022-05-13 13:56:47.724 TRACE 9576 --- [http-nio-8083-exec-9] o.s.cache.interceptor.CacheInterceptor   : Cache entry for key 'guntur132022-05-13' found in cache 'weather'
+2022-05-13 13:56:47.724  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 2022-05-15
+2022-05-13 13:56:47.725  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 2022-05-16
+2022-05-13 13:56:47.726  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 2022-05-17
+2022-05-13 13:56:47.727  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 2022-05-18
+2022-05-13 13:56:47.728  INFO 9576 --- [http-nio-8083-exec-8] c.e.w.service.WeatherServiceImpl         : 2022-05-19
